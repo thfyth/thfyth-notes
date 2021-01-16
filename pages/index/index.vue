@@ -8,11 +8,13 @@
 	<div class="content">
 		<img src="/static/logo.png" alt="">
 		<div class="text-area">
-			<a-button type="primary" icon="search">
+			<!-- <a-button type="primary" icon="search">
 			      Search
-			    </a-button>
+			    </a-button> -->
+				
 			<span class="title">{{title}}</span>
 		</div>
+		
 	</div>
 </template>
 

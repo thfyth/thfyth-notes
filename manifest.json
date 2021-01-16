@@ -65,7 +65,11 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
-        "enable": false
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "h5" : {
+        "template" : "template.h5.html",
+        "title" : "后台管理"
     }
 }
