@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/thfyth/thfyth-notes#readme",
   "dependencies": {
-    "ant-design-vue": "^1.7.2"
+    "ant-design-vue": "^1.7.2",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.0-beta.8"
   }
 }

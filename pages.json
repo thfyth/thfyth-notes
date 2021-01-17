@@ -3,32 +3,31 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle":"custom"
 	},
 	"topWindow": {
 	    "path": "window/topWindow.vue",
 	    "style": {
-	      "height": "44px"
+	      "height": "64px"
 	    }
 	},
 	"leftWindow": {
 	    "path": "window/leftWindow.vue",
 	    "style": {
-	      "width": "80px"
-	    }
-	},
-	"rightWindow": {
-	    "path": "window/topWindow.vue",
-	    "style": {
-	      "min-width": "768px"
+	      "width": "200px"
 	    }
 	}
+	// "rightWindow": {
+	//     "path": "window/topWindow.vue",
+	//     "style": {
+	//       "min-width": "768px"
+	//     }
+	// }
 }
