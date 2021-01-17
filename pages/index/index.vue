@@ -14,7 +14,7 @@
 				
 			<span class="title">{{title}}</span>
 		</div>
-		
+		<router-view>123</router-view>
 	</div>
 </template>
 
@@ -23,7 +23,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				value:null
 			}
 		},
 		onLoad() {

@@ -12,5 +12,23 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"topWindow": {
+	    "path": "window/topWindow.vue",
+	    "style": {
+	      "height": "44px"
+	    }
+	},
+	"leftWindow": {
+	    "path": "window/leftWindow.vue",
+	    "style": {
+	      "width": "80px"
+	    }
+	},
+	"rightWindow": {
+	    "path": "window/topWindow.vue",
+	    "style": {
+	      "min-width": "768px"
+	    }
 	}
 }

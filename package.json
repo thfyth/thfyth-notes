@@ -1,0 +1,23 @@
+{
+  "name": "thfyth-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thfyth/thfyth-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thfyth/thfyth-notes/issues"
+  },
+  "homepage": "https://github.com/thfyth/thfyth-notes#readme",
+  "dependencies": {
+    "ant-design-vue": "^1.7.2"
+  }
+}
