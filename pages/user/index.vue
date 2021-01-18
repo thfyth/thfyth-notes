@@ -6,11 +6,6 @@
 </template>
 
 <script>
-	export default {
-		created(){
-		    console.log(this.$route)    //此时我们使用vue-router的api进行获取
-		  },
-	}
 </script>
 
 <style>

@@ -1,6 +1,6 @@
 <template>
 	<view class="main">
-		<a-menu mode="inline" :default-selected-keys="[2]" :default-open-keys="[1]" :style="{ height: '100%', borderRight: 0 }">
+		<a-menu mode="inline" @click="selectMenu" :default-selected-keys="['2']" :default-open-keys="['1']" :style="{ height: '100%', borderRight: 0 }">
 			<template v-for="item in meunList">
 				<a-sub-menu :key="item.id">
 					<span slot="title">
@@ -25,11 +25,11 @@
 					{
 						icon:'user',
 						name:'用户管理',
-						id:1,
+						id:'user',
 						children:[
 							{
 								name:'用户列表',
-								id:2,
+								id:'user/userlist',
 							},{
 								name:'达人列表',
 								id:3,
@@ -69,6 +69,15 @@
 						]
 					}
 				]
+			}
+		},
+		methods:{
+			selectMenu(e){
+				console.log(e);
+				const { key } = e;
+				this.$router.push({
+					path:`/${key}`
+				})
 			}
 		}
 	}

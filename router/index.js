@@ -16,6 +16,10 @@ const router = createRouter({
 	                path:'user/userList',
 	                name:'userlist',
 	                component:()=>import('@/pages/user/userlist/index.vue'),
+	            },{
+	                path:'user/talentlist',
+	                name:'talentlist',
+	                component:()=>import('@/pages/user/talentlist/index.vue'),
 	            },
 	        ]
 	    }]
