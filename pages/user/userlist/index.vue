@@ -14,12 +14,13 @@
 			</div>
 		</div>
 		<div class="table-view"><c-table :columns="columns"></c-table></div>
-		<c-model :visible="visible" @closeModel="closeModel"></c-model>
+		<c-model :visible="visible" :formLable="formLabel" :form="form" @closeModel="closeModel"></c-model>
 	</div>
 </template>
 <script>
 import cTable from '@/components/cTable.vue';
 import cModel from '@/components/cModel.vue';
+import {request} from "@/utils/request.js"
 const columns = [
 	{
 		title: '用户名',
@@ -56,7 +57,30 @@ export default {
 	data() {
 		return {
 			columns,
-			visible:false
+			visible:false,
+			form:{},
+			formLabel:[
+				{
+					label:'用户名：',
+					name:'username',
+					type:'put'
+				},
+				{
+					label:'密码：',
+					name:'password',
+					type:'put'
+				},
+				{
+					label:'昵称：',
+					name:'nickname',
+					type:'put'
+				},
+				{
+					label:'手机：',
+					name:'mobile',
+					type:'put'
+				},
+			]
 		};
 	},
 	created() {
@@ -69,6 +93,24 @@ export default {
 		},
 		closeModel(e){
 			vm.visible=e
+		},
+		saveEdit(){
+			//点击保持
+			request('user/register',vm.form)
+				.then(res => {
+					if(res.code === 0){
+						uni.showToast({
+							title:res.msg,
+							icon:'success'
+						})
+					}else{
+						uni.showToast({
+							title:res.msg
+						})
+					}
+				}).catch(err => {
+					console.log(err);
+				})
 		}
 	}
 };

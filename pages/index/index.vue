@@ -1,17 +1,7 @@
 <template>
-	<!-- <view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
-	</view> -->
 	<div class="content">
 		<img src="/static/logo.png" alt="">
 		<div class="text-area">
-			<!-- <a-button type="primary" icon="search">
-			      Search
-			    </a-button> -->
-				
 			<span class="title">{{title}}</span>
 		</div>
 		<router-view>123</router-view>
